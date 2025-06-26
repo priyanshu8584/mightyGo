@@ -3,10 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import { Sparkles, Check, Shield, Star, Handshake } from "lucide-react";
 import { SignInButton, useUser } from "@clerk/nextjs";
 import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function LandingPage() {
   const router = useRouter();
@@ -249,7 +251,16 @@ export default function LandingPage() {
             <span className="text-xl font-bold text-red-600">MightyGo</span>
           </div>
           <div className="text-gray-500 text-center md:text-right font-bold">
-          <h1>Developed by <a href="https://www.linkedin.com/in/priyanshu-singh-8a7652258/">Priyanshu Singh</a></h1>
+            <Link
+      href="https://www.linkedin.com/your-profile" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center p-2 rounded-full hover:bg-gray-100 transition-colors"
+      aria-label="LinkedIn Profile"
+    >
+      <FaLinkedinIn className="w-5 h-5 text-blue-600" />
+      Developed by Priyanshu Singh
+    </Link>
           </div>
         </div>
       </footer>

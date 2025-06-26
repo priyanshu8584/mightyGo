@@ -19,15 +19,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MightyGo",
   description: "Your one-stop solution for event services",
-  openGraph: {
-    images: [
-      {
-        url: '/new-logo.png', 
-        width: 800,
-        height: 600,
-      }
-    ]
-  }
+ icons: {
+    icon: "/logo.png", 
+    shortcut: "/logo.png", 
+  },
  
 };
 
