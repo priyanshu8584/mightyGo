@@ -1,0 +1,2 @@
+{ "name": "Alice", "email": "alice@example.com", "password":"abc123", "role": "customer", "createdAt": 1714567890000 }
+{ "name": "Bob", "email": "bob@example.com", "password":"abc123","role": "vendor", "createdAt": 1714567891000 }
