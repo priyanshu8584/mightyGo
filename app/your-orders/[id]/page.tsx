@@ -67,7 +67,7 @@ const YourOrders = () => {
           No orders yet
         </h2>
         <p className="text-center text-gray-600 max-w-md">
-          You haven't booked any services yet. Explore our services to get started!
+          You haven&apos;t booked any services yet. Explore our services to get started!
         </p>
         <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all">
           Browse Services

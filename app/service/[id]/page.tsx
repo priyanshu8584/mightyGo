@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Id } from '@/convex/_generated/dataModel';
 import { Loader2 } from 'lucide-react';
-import { UserButton, useUser } from '@clerk/nextjs';
+import {  useUser } from '@clerk/nextjs';
 import CommentsSection from '@/components/CommentSection';
 import toast from 'react-hot-toast';
 import { DayPicker } from 'react-day-picker';

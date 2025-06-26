@@ -122,7 +122,7 @@ export default function LandingPage() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">Why Choose MightyGo?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're changing the way people connect with local services
+            We&apos;re changing the way people connect with local services
           </p>
         </div>
 
@@ -236,7 +236,7 @@ export default function LandingPage() {
               </Button>
             </SignInButton>
             </Button>
-          </div>
+          </div>''
         </div>
       </section>
 

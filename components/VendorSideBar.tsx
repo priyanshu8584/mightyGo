@@ -8,18 +8,18 @@ import React, { useState } from 'react'
 const VendorSideBar = () => {
    const { user } = useUser();
     const [activeSection, setActiveSection] = useState<'list' | 'add' | 'testimonials' | 'reviews'|'bookings'>('list');
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
-    const [price, setPrice] = useState('');
-    const [category, setCategory] = useState('');
-    const [photos, setPhoto] = useState<File | null>(null);
-    const [adding, setAdding] = useState(false);
+    // const [name, setName] = useState('');
+    // const [description, setDescription] = useState('');
+    // const [price, setPrice] = useState('');
+    // const [category, setCategory] = useState('');
+    // const [photos, setPhoto] = useState<File | null>(null);
+    // const [adding, setAdding] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const router= useRouter();
   
-    const generateUploadUrl = useMutation(api.files.generateUploadUrl);
-    const addService = useMutation(api.services.addService);
-    const services = useQuery(api.services.getServiceById, { vendorId: user?.id || '' }) || [];
+    // const generateUploadUrl = useMutation(api.files.generateUploadUrl);
+    // const addService = useMutation(api.services.addService);
+    // const services = useQuery(api.services.getServiceById, { vendorId: user?.id || '' }) || [];
   return (
     <div>
         <div className="md:hidden flex justify-between items-center p-4 bg-white shadow-sm">
