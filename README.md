@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚗 MightyGo – Smart Local Services Aggregator
 
-## Getting Started
+MightyGo is a full-stack web application designed as a Smart Local Services Marketplace, similar to real-world platforms like Urban Company. It connects customers with local service providers, enabling browsing services, booking appointments, and managing service listings.
 
-First, run the development server:
+This project demonstrates real-life full-stack engineering skills — from API design and database modeling to stateful frontend interactions — making it ideal for showcasing in interviews and portfolios.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌟 Project Vision
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+MightyGo aims to solve the common problem of fragmented local service discovery by providing:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A unified marketplace for services (e.g., cleaning, repairs, beauty)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+User onboarding and session handling
 
-## Learn More
+Easy service browsing by category
 
-To learn more about Next.js, take a look at the following resources:
+Order/booking system
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Vendor dashboards to manage services
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This app is structured like a production-ready system, designed with scalability and maintainability in mind.
 
-## Deploy on Vercel
+🛠 Tech Stack
+Layer	Technology
+Frontend	Next.js (App Router)
+Styling	Tailwind CSS
+Backend API	Next.js API Routes
+Database	(Add your DB e.g. MongoDB / Prisma schema)
+Deployment	Vercel
+Languages	TypeScript
+🏗 Architecture Overview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MightyGo follows a layered modular architecture similar to industry standards:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧠 1. Frontend Layer (Client)
+
+Built with Next.js (App Router)
+
+Responsive UI using Tailwind CSS
+
+Clean navigation with pages such as:
+
+Home
+
+Services
+
+Your Orders
+
+Vendor Dashboard
+
+Components designed for reuse (cards, lists, forms)
+
+Role-aware UI (customer vs vendor)
+
+This layer handles user interactions and visual state, while making API calls to backend routes.
+
+📡 2. Backend Layer (API)
+
+Implemented using Next.js API Routes
+
+API endpoints handle:
+
+Service creation and retrieval
+
+Order creation and history
+
+User authentication
+
+Vendor service management
+
+Separation between route handling and business logic
+
+This mimics a decoupled backend service, essential in scalable systems.
+
+🗃️ 3. Database Layer
+
+Structured database models (currently configured via schema tools like Prisma)
+
+Models include:
+
+Users
+
+Services
+
+Orders
+
+Vendors
+
+Supports:
+
+CRUD operations
+
+Relationship mapping (user ↔ orders)
+
+Filtering and querying by category
+
+This reflects real production-grade data modeling.
+
+🚀 Key Features
+📍 User Features
+
+Browse available services by category
+
+View service details and pricing
+
+Book services by filling order form
+
+See list of previous orders
+
+📍 Vendor Features
+
+Add new service listings
+
+Edit or delete existing services
+
+Dashboard to manage bookings
+
+📍 Admin / Global Features
+
+Unified UI navigation
+
+Contact page
+
+Centralized data fetching
